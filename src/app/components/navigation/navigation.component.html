@@ -1,0 +1,16 @@
+<nav id="navbar" [ngClass]="{'nav-scrolled': navScrolled}" (scroll)="onWindowScroll($event)">
+  <div class="logo-wrapper" *ngIf="navScrolled">
+    <h1>LOREM INC.</h1>
+  </div>
+  <div class="logo-wrapper" *ngIf="!navScrolled">
+    <h1>LOREM INC.</h1>
+  </div>
+  <div class="menu-wrapper">
+    <ul class="menu" [ngClass]="{'nav-scrolled-menu': navScrolled}">
+      <li [ngx-scroll-to]="'#weAreScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>about</span></li>
+      <li [ngx-scroll-to]="'#weDoScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>services</span></li>
+      <li [ngx-scroll-to]="'#careersScroll'" [ngx-scroll-to-offset]="-100" class="menu-item color-muted-white"><span>careers</span></li>
+      <li [ngx-scroll-to]="'#contactScroll'" class="menu-item color-muted-white"><span>contact us</span></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,45 @@
+<div class="form-wrapper" id="contactScroll">
+  <div class="form-l">
+    <div class="text">
+      <h1>contact<br>us.</h1>
+      <div class="information color-muted-white">
+        <p>Lorem Inc.</p>
+        <p>Boulevard Partizanski Odredi</p>
+        <p>Skopje, North Macedonia</p>
+        <p>T +389 0240896003</p>
+      </div>
+    </div>
+  </div>
+  <div class="form-r">
+    <form name="form" #f="ngForm" (ngSubmit)='f.form.valid && formSent()'>
+      <div class="name-row">
+        <div class="form-group">
+          <input type="text" class="form-control color-muted-white" id="first-name" placeholder="name" name="firstName"
+            [(ngModel)]="messageBox.firstName" #firstName="ngModel">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control color-muted-white" id="last-name" placeholder="last name"
+            name="lastName" [(ngModel)]="messageBox.lastName" #lastName="ngModel">
+        </div>
+      </div>
+      <div class="email-row">
+        <div class="form-group">
+          <input type="email" class="form-control color-muted-white" id="email" required placeholder="email"
+            name="email" email [(ngModel)]="messageBox.email" #email="ngModel">
+          <p class="error-notif" *ngIf="email.touched && email.errors?.required">Email field is required</p>
+          <p class="error-notif" *ngIf="email.errors?.email">Email must be a valid email address</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <textarea rows="7" class="form-control color-muted-white" placeholder="message" id="message" required
+          name="message" [(ngModel)]="messageBox.message" #message="ngModel"></textarea>
+        <p class="error-notif" *ngIf="message.touched && message.errors?.required">Message field is required</p>
+      </div>
+      <div>
+        <button type='submit' class="button letter-spacing-button" [disabled]='f.form.invalid'><span>SEND</span><i
+            class="fa fa-angle-right"></i></button>
+      </div>
+    </form>
+  </div>
+</div>

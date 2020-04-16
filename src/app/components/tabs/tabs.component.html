@@ -1,0 +1,17 @@
+<div class="tabs-wrapper">
+  <div class="tabs-nav">
+    <div class="tab-item letter-spacing-large" [ngClass]="{'active active-icon': selectedTab === 1}"
+      (click)="displaySelected(1)"><span>Vestibulum at odio sit amet</span><i class="fa fa-angle-right"
+        *ngIf='selectedTab === 1'></i><i class="fa fa-angle-right" *ngIf='selectedTab != 1'></i></div>
+    <div class="tab-item letter-spacing-large" [ngClass]="{'active active-icon': selectedTab === 2}"
+      (click)="displaySelected(2)"><span>Sed vehicula neque</span><i class="fa fa-angle-right"
+        *ngIf='selectedTab === 2'></i><i class="fa fa-angle-right" *ngIf='selectedTab != 2'></i></div>
+    <div class="tab-item letter-spacing-large" [ngClass]="{'active active-icon': selectedTab === 3}"
+      (click)="displaySelected(3)"><span>Nulla id liber pretium</span><i class="fa fa-angle-right"
+        *ngIf='selectedTab === 3'></i><i class="fa fa-angle-right" *ngIf='selectedTab != 3'></i></div>
+  </div>
+  <div class="tab-display">
+    <p class='letter-spacing-standard' *ngIf="!loading">{{selectedItem.content}}</p>
+    <img class="loader" src="../../../assets//images/loader.png" *ngIf="loading">
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.cookies-policy-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+.cookies-policy-wrapper .display-none {
+  transition: 1s;
+}
+
+.button {
+  background: black;
+  color: white;
+  padding: 0 2.5rem;
+  line-height: 30px;
+  font-size: 10px;
+  font-weight: 300;
+  transition: 0.1s;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.836);
+  cursor: pointer;
+}
+
+p {
+  font-weight: 300;
+  margin-right: 2rem;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+.display-none {
+  opacity: 0;
+}
+
+.display-none-2 {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .cookies-policy-wrapper {
+    height: auto;
+    padding: 1rem 2.5rem;
+  }
+}

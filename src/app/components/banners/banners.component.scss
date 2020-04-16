@@ -1,0 +1,208 @@
+.banners-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-1,
+.banner-2,
+.banner-3 {
+  width: 100%;
+  height: 600px;
+}
+
+.banner-1 {
+  position: relative;
+  background-color: black;
+  color: white;
+  background-image: url("../../../assets//images/banner-we-are.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner-2 {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  background-image: url("../../../assets//images/banner-we-do.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner-3 {
+  position: relative;
+  background-color: black;
+  color: white;
+  background-image: url("../../../assets//images//banner-careers.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner-l {
+  background-color: white;
+  height: 600px;
+  width: 40%;
+  position: absolute;
+  top: 0;
+}
+
+.banner-r {
+  background-color: black;
+  height: 600px;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.button {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  max-width: 200px;
+  padding: 0.9rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  transition: 0.2s ease-out;
+}
+
+.button:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: rgb(90, 89, 89);
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 9px rgba(255, 255, 255, 0.5);
+}
+
+.button-rev {
+  border: 1px solid black;
+  text-align: center;
+  max-width: 200px;
+  padding: 1rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  transition: 0.2s ease-out;
+}
+
+.button-rev:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: rgb(226, 226, 226);
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 9px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 6rem;
+  justify-content: center;
+}
+
+.text h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.text p,
+.text .button,
+.text .button-rev {
+  margin-top: 2rem;
+}
+
+.text p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.text-rev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 0;
+  padding-right: 6rem;
+  text-align: end;
+}
+
+.banner-r-mobile {
+  display: none;
+}
+
+.banner-l-mobile {
+  display: none;
+}
+
+@media (max-width: 1128px) {
+  .banner-r {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .banner-l {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .banner-r-mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .banner-l-mobile {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .text-mobile {
+    color: wheat;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 120px;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  .text-mobile p {
+    color: #e0e0e0;
+  }
+
+  .text-mobile-rev {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.719);
+    padding: 120px;
+    color: black;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-mobile {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-mobile h1 {
+    font-size: 3rem;
+  }
+
+  .text-mobile p {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-mobile {
+    padding: 1rem;
+  }
+}

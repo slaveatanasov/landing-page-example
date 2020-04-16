@@ -1,0 +1,131 @@
+.tabs-wrapper {
+  background-color: #e2e2e0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 300px;
+  min-height: 280px;
+  width: 660px;
+  padding: 4rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.tabs-nav {
+  height: 300px;
+  font-size: 0.9rem;
+}
+
+.tab-item {
+  background: rgb(196, 194, 194);
+  border-top: 1px solid rgba(255, 255, 255, 0.548);
+  height: 50px;
+  line-height: 50px;
+  width: 320px;
+  padding-left: 2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.tab-item:first-child {
+  border-top: none;
+}
+
+.tab-item:hover {
+  background: rgb(214, 213, 213);
+}
+
+.tab-item.active:hover {
+  background: black;
+}
+
+.active {
+  background: black;
+  color: white;
+}
+
+.loader {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+i {
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+.tab-item:not(.active):hover i {
+  margin-left: 26px;
+}
+
+.active i {
+  transform: rotate(90deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1128px) {
+  .tabs-wrapper {
+    height: auto;
+  }
+
+  .tab-display {
+    flex-grow: 1;
+  }
+
+  .tabs-nav {
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .tabs-wrapper {
+    flex-direction: column;
+  }
+
+  .tabs-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab-item {
+    flex-grow: 1;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .tab-display {
+    height: 10%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs-nav {
+    width: 100%;
+  }
+
+  .tab-item {
+    width: 100%;
+  }
+}

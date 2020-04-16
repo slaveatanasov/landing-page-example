@@ -1,0 +1,24 @@
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.content {
+  color: white;
+  position: absolute;
+  left: 18%;
+  top: 35%;
+  width: 260px;
+}
+
+h1 {
+  font-size: 4.25rem;
+  line-height: 4rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/Gotham-Medium.eot');
+  src: url('./assets/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Gotham-Medium.woff') format('woff'),
+      url('./assets/fonts/Gotham-Medium.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/Gotham-Bold.eot');
+  src: url('./assets/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Gotham-Bold.woff') format('woff'),
+      url('./assets/fonts/Gotham-Bold.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./assets/fonts/Gotham-Book.eot');
+  src: url('./assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Gotham-Book.woff2') format('woff2'),
+      url('./assets/fonts/Gotham-Book.woff') format('woff'),
+      url('./assets/fonts/Gotham-Book.ttf') format('truetype'),
+      url('./assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: Gotham;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.color-muted-white {
+  color: rgba(255, 255, 255, 0.700);
+}
+
+.line-height-standard {
+  line-height: 1.5rem;
+}
+
+.line-height-large {
+  line-height: 1.7rem;
+}
+
+.letter-spacing-standard {
+  letter-spacing: 0.5px;
+}
+
+.letter-spacing-large {
+  letter-spacing: 0.9px;
+}
+
+.letter-spacing-button {
+  letter-spacing: 1.8px;
+}
+
+i {
+  margin-left: 10px;
+  transition: 0.5s;
+}

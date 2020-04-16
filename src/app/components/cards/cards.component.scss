@@ -1,0 +1,110 @@
+.cards-wrapper {
+  background-color: #e2e2e0c0;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  margin-right: 2rem;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-title-1,
+.card-title-2,
+.card-title-3 {
+  padding: 46px 0;
+}
+
+.card-title-1 {
+  background-image: url("../../../assets//images/card-play-harder.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-title-2 {
+  background-image: url("../../../assets//images/card-simplicity.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-x: -10px;
+}
+
+.card-title-3 {
+  background-image: url("../../../assets//images/card-innovation.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card-content {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.card-button {
+  padding: 14px 0 14px 0;
+  text-align: center;
+  background-color: black;
+  font-weight: 300;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.card-button:hover {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .cards-wrapper {
+    flex-direction: column;
+    padding: 0 12rem;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card:nth-child(2) {
+    background: #ffffffb8;
+  }
+
+  .card-title-1,
+  .card-title-3 {
+    background-position: left;
+  }
+
+  .card-title-2 {
+    background-position: right;
+  }
+
+  .card-button {
+    align-self: flex-start;
+    padding: 14px;
+  }
+
+  .card-button-alt {
+    align-self: flex-end;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-wrapper {
+    padding: 0;
+  }
+}
